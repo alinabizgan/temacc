@@ -1,0 +1,32 @@
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<a href="/vizualizare-cos"><button id="myBtn" title="Vizualizare cos" style="right: 100px;">Vezi Cosul</button></a>
+
+<% for(var i=0; i<produse.length; i++){%>
+
+<table class="center">
+  <!--ul>
+    <tr>
+      <td --> <td>
+        <img id="myImg" src="/<%=produse[i].id;%>.jpg" height=400 width=350 style="margin-right:10px;"></img>
+
+      </td>
+      <!--/td>
+    </tr>
+    <tr-->
+      <td class=""><%=produse[i].nume%> <br><%=produse[i].pret%> LEI
+      
+            
+        <% if (cookie_loggedin.loggedin == "true"){%>
+        <form action="/adaugare-cos" method="POST">
+          <input type="hidden" name="id" value="<%=produse[i].id;%>" ></input>
+          <button type="submit" id="<%=produse[i].id;%>"  onclick="clickButton(this.id)">Adauga in cos</button>
+        </form>
+
+        <% } %>
+
+
+      </td>
+</table>
+
+<%}%>

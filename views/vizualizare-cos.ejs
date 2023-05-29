@@ -1,0 +1,47 @@
+<table border="1" align="center">
+  <!-- <tr>
+    <th>ID</th>
+    <th>Produs</th>
+  </tr> -->
+
+
+  <% 
+  var cantitati = [];
+  if(cumparaturi_id.length!=0){
+    var i=0;
+    cumparaturi_id.forEach(function(data){
+      
+      //cantitati[cumparaturi_id[i]]++; %>
+    <tr>
+      <td><img src="/<%=cumparaturi_id[i];%>.jpg" width="200px" height="200px"></img></td>
+      <!-- <td>
+        <%=cumparaturi_id[i];%>
+      </td> -->
+      <td style="color:pink">
+        <%=produse[i].nume%>
+      </td>
+      <!-- <td>Cantitate 0</td> -->
+      <td>
+        <form action="/sterge-cos" method="post">
+          <button type="submit">Scoate din coș</button>
+          <input type="hidden" name="id" value=<%=cumparaturi_id[i]%>>
+          <!--<input type="hidden" name="prod" value=<%=data.numeprodus%>> -->
+        </form>
+      </td>
+    </tr>
+    <% i++; }) %>
+
+
+      <form action="/plaseaza-comanda" method="post">
+        <button type="submit">Plaseaza comanda</button>
+      </form>
+
+
+
+      <% } else{ %>
+        <!-- <tr>
+          <td colspan="7">No Data Found</td>
+        </tr> -->
+        <h3 style="color:pink">Coșul de cumpărături este gol</h3>
+        <% } %>
+</table>

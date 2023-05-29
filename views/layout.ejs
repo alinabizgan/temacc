@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+    <meta charset="UTF-8">
+    <title>CC</title>
+    <link href="/stil.css" rel="stylesheet" type="text/css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <header class="title">Cloud Computing - Tema de casa </header>
+<br/>
+    <main id="content">
+        <nav class="navbar">
+            <a href="/">Home</a> |
+            <a href="/cumparaturi">Cumpărături</a> |
+           <% if (cookie_loggedin_value == "true"){%>
+            <a id="nr_produse" href="/vizualizare-cos">Coș:<%=cumparaturi_id.length;%> produse</a> |
+            <input id="input_nr_produse" type="hidden" name="id" value="<%=cumparaturi_id.length;%>"></input>
+            <a href="/delogare">Log out</a> |
+            <% } else { %>
+            <a href="/autentificare">Autentificare</a> |
+            <% } %> 
+            <a href="/contact">Contact</a> 
+            
+        </nav>
+		 
+            <%- body %>
+
+       
+        
+    </main>
+
+
+    <footer>
+        <p>
+            <div style="color:white">
+                <td >Motorcycle S.R.L.<br/> <a href="https://www.google.ro/maps/place/Strada+Vasile+Lupu+32,+Ia%C8%99i+700259/@47.1592295,27.6007303,17z/data=!3m1!4b1!4m5!3m4!1s0x40cafb8ff3754be5:0xbf9103ce29a8a57f!8m2!3d47.1592259!4d27.602919?hl=ro">Showroom: </a> Strada Vasile Lupu 32, Iași 700259  </td>
+          <br/>  Nr. de tel: 0765135496
+          </div>
+             </p>
+        <h4>&copy; Cloud Computing 2023</h4>
+    </footer>
+
+</body>
+</html>

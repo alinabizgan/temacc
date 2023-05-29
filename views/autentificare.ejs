@@ -1,0 +1,33 @@
+<form action="/verificare-autentificare" method="post">
+    <div class="textt">
+        <label for="uname"><b>Utilizator</b></label>
+        <input type="text" placeholder="Introduceți utilizatorul" name="uname" required><br /><br />
+
+        <label for="psw"><b>Parolăㅤㅤ</b></label>
+        <input type="password" placeholder="Introduceți parola" name="psw" required>
+
+    </div>
+    <button type="submit">Autentificare</button>
+    <p style="color:rgb(165, 100, 100);  font-weight: bold">
+        <%=mesaj%>
+    </p>
+</form>
+<br />
+<br />
+<h2></h2>
+<h1 style="color:rgb(165, 100, 100)"> Nu ai cont încă? <br/>Înregistrează-te aici!</h1>
+</h2>
+<form action="/utilizator-nou" method="POST">
+    <div class="textt">
+        <b>Nume utilizator:ㅤ </b>
+        <input type="text" name="name"> <br/><br/>
+        <b>Parola utilizator:</b>
+        <input type="password" name="parola"> <br/><br/>
+        <b>Adresa: ㅤㅤㅤㅤㅤ</b>
+        <input type="text" name="adresa"> <br/><br/>
+        <b>Telefon:ㅤㅤㅤㅤㅤ</b>
+        <input type="text" name="telefon"> <br/>
+        <button type="submit">Submit</button>
+        
+    </div>
+</form>

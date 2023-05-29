@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "nume": "Norton",
+        "pret": 53131.00
+    },
+    {
+        "id": 2,
+        "nume": "Bonneville Bobber",
+        "pret": 29500.00
+    },
+    {
+        "id": 3,
+        "nume": "Kawasaki vulcan 900 ",
+        "pret": 34174.00
+    },
+    {
+        "id": 4,
+        "nume": "BMW G310R",
+        "pret": 70564.00
+    },
+    {
+        "id": 5,
+        "nume": "Aprilia RS 660",
+        "pret": 54381.00
+    },
+    {
+        "id": 6,
+        "nume": "Royal Enfield Bullet",
+        "pret": 29500.00
+    },
+    {
+        "id": 7,
+        "nume": "Suzuki GS500",
+        "pret": 9836.00
+    },
+    {
+        "id": 8,
+        "nume": "Streetfighter v4",
+        "pret": 29533.00
+    },
+    {
+        "id": 9,
+        "nume": "Xdiavel black star",
+        "pret": 104752.00
+    }
+
+]
