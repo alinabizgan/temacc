@@ -21,7 +21,7 @@ AWS.config.update({
 	sessionToken: sessionToken
 });
 
-const port = 6789;
+const port = 80;
 app.use(cookieParser());
 
 // directorul 'views' va conține fișierele .ejs (html + js executat la server)

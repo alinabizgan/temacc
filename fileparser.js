@@ -12,7 +12,6 @@ const sessionToken = process.env.sessionToken;
 
 const parsefile = async (req) => {
     return new Promise((resolve, reject) => {
-        console.log(region);
         let options = {
             maxFileSize: 100 * 1024 * 1024, //100 MBs converted to bytes,
             allowEmptyFiles: false
